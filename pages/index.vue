@@ -1,21 +1,22 @@
 <template>
-  <div class="container has-text-centered">
-    <h1 class="title">
-      Title
-    </h1>
-    <h2 class="subtitle">
-      Subtitle
-    </h2>
+  <div class="my-4">
+    <Resumes />
+    <Skills />
   </div>
 </template>
 
 <script>
+import Resumes from '~/components/Resumes'
+import Skills from '~/components/Skills'
+
 export default {
+  components: {
+    Resumes,
+    Skills,
+  },
   head: {
     script: [
-      {
-        src: 'https://kit.fontawesome.com/c1913ea72f.js'
-      }
+      { src: 'https://kit.fontawesome.com/c1913ea72f.js' }
     ],
   }
 }

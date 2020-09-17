@@ -15,27 +15,35 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Simone Colaci CV',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Simone Colaci CV' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.jpeg' },
     ]
   },
   /*
   ** Global CSS
   */
   css: [
+    './assets/css/bulma-timeline.min.css'
   ],
+  modules: [
+    '@nuxtjs/style-resources'
+  ],
+
+    //You will have to add this new object if it doesn't exist already
+  styleResources: {
+    scss: ['./assets/scss/index.scss']
+  },
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
-  plugins: [
-  ],
+  plugins: ['@/plugins/vue-observe-visibility.js'],
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
@@ -53,17 +61,4 @@ export default {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
   ],
-  /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
-  build: {
-    postcss: {
-      preset: {
-        features: {
-          customProperties: false
-        }
-      }
-    },
-  }
 }
