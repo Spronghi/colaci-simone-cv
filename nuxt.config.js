@@ -32,6 +32,7 @@ export default {
     './assets/css/bulma-timeline.min.css'
   ],
   modules: [
+    'vue-scrollto/nuxt',
     '@nuxtjs/style-resources'
   ],
 
@@ -43,7 +44,7 @@ export default {
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
-  plugins: ['@/plugins/vue-observe-visibility.js'],
+  plugins: ['@/plugins/vue-observe-visibility.js', '@/plugins/vue-scroll-to.js'],
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components

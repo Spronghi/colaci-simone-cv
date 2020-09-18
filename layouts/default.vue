@@ -1,8 +1,7 @@
 <template>
   <div>
-    <section class="hero is-success is-bold is-fullheight">
+    <section class="hero is-success is-bold is-fullheight bg-img">
       <Header />
-      <!-- <HeaderFixed /> -->
       <Presentation />
     </section>
     <Nuxt />
@@ -23,4 +22,12 @@ export default {
 }
 </script>
 <style  scoped>
+.bg-img { 
+    background-image: url(/wallpaper.png) !important;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+ }
 </style>

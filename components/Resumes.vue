@@ -1,6 +1,6 @@
 <template>
 <section class="hero" id="resumes" v-observe-visibility="visibilityChanged">
-  <div class="hero-body columns">
+  <div class="hero-body columns is-vcentered">
     <div class="column is-half ml-5 is-size-5">
       Passionate in all aspect of Web Development, both frontend through to the backend, I am a hard worker who is extremely focused on delivery of products to the business both on time, and within cost. <br /><br />
       Possessing a strong interest in efficient algorithms and high-performance coding, able to work in Agile context, in love with SCRUM methodologies. <br /><br />

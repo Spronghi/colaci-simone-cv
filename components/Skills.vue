@@ -1,7 +1,7 @@
 <template>
-<section class="hero is-primary is-bold">
+<section id="skills" class="hero bg-img">
   <div class="hero-body">
-    <div id="skills" class="mx-6 columns">
+    <div  class="mx-6 columns">
       <div class="column" v-for="(skill, index) in skills" :key="index">
         <div class="card">
           <div class="card-content">
@@ -65,6 +65,15 @@ export default {
 }
 </script>
 <style scoped>
+.bg-img { 
+    background-image: url(/wallpaper.png) !important;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+ }
+
 .card {
   border-radius: 10px;
 }
